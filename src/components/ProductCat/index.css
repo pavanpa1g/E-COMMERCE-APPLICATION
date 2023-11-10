@@ -1,0 +1,34 @@
+.text-product-head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.product-name {
+  color: var(--neutral-dark-blue, #100e3a);
+
+  /* Muli/Xtrabold/16pt */
+  font-family: Mortise;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%; /* 22.4px */
+}
+
+@media screen and (min-width: 786px) {
+  .products-container {
+    gap: 30px;
+  }
+  .view-all {
+    display: none;
+  }
+  .product-name {
+    font-size: 30px;
+  }
+}
